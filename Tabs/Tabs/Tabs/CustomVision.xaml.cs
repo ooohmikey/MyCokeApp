@@ -14,6 +14,7 @@ using Newtonsoft.Json.Linq;
 using Plugin.Geolocator;
 using Tabs.DataModels;
 using Xamarin.Forms.Xaml;
+using System.Collections.Generic;
 
 namespace Tabs
 {
@@ -50,25 +51,8 @@ namespace Tabs
                 return file.GetStream();
             });
 
-            //await postLocationAsync();
-
             await MakePredictionRequest(file);
-            file.Dispose();
         }
-
-        //async Task postLocationAsync()
-        //{
-        //    var locator = CrossGeolocator.Current;
-        //    locator.DesiredAccuracy = 50;
-        //    var position = await locator.GetPositionAsync();
-        //    MyCokeModel model = new MyCokeModel()
-        //    {
-        //        Longitude = (float)position.Longitude,
-        //        Latitude = (float)position.Latitude
-        //    };
-        //    //await AzureManager.AzureManagerInstance.PostCokeInformation(model);
-
-        //}
 
         static byte[] GetImageAsByteArray(MediaFile file)
         {
@@ -91,7 +75,8 @@ namespace Tabs
 
             using (var content = new ByteArrayContent(byteData))
             {
-
+                TagLabel.Text = "";
+                PredictionLabel.Text = "";
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                 response = await client.PostAsync(url, content);
 
@@ -99,45 +84,35 @@ namespace Tabs
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
-                    ///*
                     JObject rss = JObject.Parse(responseString);
 
                     var Probability = from p in rss["Predictions"] select (int)p["Probability"];
                     var Tag = from p in rss["Predictions"] select (string)p["Tag"];
+                    List<String> list = new List<String>();
 
                     foreach (var item in Tag)
                     {
                         TagLabel.Text += item + ": \n";
+                        list.Add(item);
                     }
-
+                    MyCokeModel model = new MyCokeModel();
+                    model.Tag = "Not recognised as this type of coke!";
+                    int index = 0;
                     foreach (var item in Probability)
                     {
-
                         PredictionLabel.Text += item + "\n";
                         if (item == 1)
                         {
-                            MyCokeModel model = new MyCokeModel()
-                            {
-                                Tag = "You have a coke"
-                            };
-                            await AzureManager.AzureManagerInstance.PostCokeInformation(model);
+                            model.Tag = "You drank " + list[index];
                         }
+                        index += 1;
                     }
-                    //*/
-                    /*
-
-                    EvaluationModel responseModel = JsonConvert.DeserializeObject<EvaluationModel>(responseString);
-
-                    double max = responseModel.Predictions.Max(m => m.Probability);
-
-                    TagLabel.Text = (max >= 0.5) ? "Beagle" : "Border Collie";
-                    */
+                        await AzureManager.AzureManagerInstance.PostCokeInformation(model);
                 }
                 else
                 {
                     TagLabel.Text = "Something went wrong";
                 }
-
                 file.Dispose();
             }
         }

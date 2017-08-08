@@ -31,10 +31,10 @@ C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\bin
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\MyCoke.csproj.App.config
+C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\MyCoke.csprojResolveAssemblyReference.cache
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\Tabs.MainPage.xaml.g.cs
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\Tabs.App.xaml.g.cs
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\Tabs.AzureTable.xaml.g.cs
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\Tabs.CustomVision.xaml.g.cs
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\Tabs.dll
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\Tabs.pdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs\obj\Debug\MyCoke.csprojResolveAssemblyReference.cache

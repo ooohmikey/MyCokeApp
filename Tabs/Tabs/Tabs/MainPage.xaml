@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:Tabs" 
     x:Class="Tabs.MainPage">
-    <NavigationPage Title="Information">
+    <NavigationPage Title="My Coke Records">
         <x:Arguments>
             <local:AzureTable />
         </x:Arguments>

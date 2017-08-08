@@ -112,14 +112,3 @@ C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.And
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\res\values\styles.xml
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\R.cs.flag
 C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\uploadflags.txt
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\bin\Debug\Tabs.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\bin\Debug\Tabs.Android.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Plugin.Geolocator.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Plugin.Media.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Plugin.Permissions.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Tabs.Android.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Tabs.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\micha\OneDrive\Documents\Visual Studio 2017\Projects\Tabs\Tabs\Tabs.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
